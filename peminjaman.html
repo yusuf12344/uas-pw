@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="peminjaman.css">
+    <script type="text/javascript" src="JAVASCRIPform.js"></script>
+</head>
+
+<div class="respon">
+
+<body class="body">
+    <div class="head">
+    <div class="logo"><img src="logo kopma.jpg"></div>
+    <div class="kopma"><h1>KOPMA</h1></div>
+    <div class="unej"><h1>UNEJ</h1></div>
+    <div class="search"><input type="text" placeholder="search" ></div>
+    </div>
+
+
+
+<div style="padding-top: 100px">
+    <div class="navbar" >
+        <a href="home.html">Beranda</a>
+        <div class="dropdown">
+            <button class="dropbtn">Bisnis
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="berita.html">Berita</a>
+                <a href="guskom.html">Guskom</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Karir
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="divisi.html">Divisi</a>
+                <a href="promo.html">Promo</a>
+            </div>
+        </div>
+  <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="peminjaman.html">Peminjaman</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+</div>
+
+
+<div class="isi" style="padding-top: 50px">
+    <div class="Pendaftaran">
+<div class="judul"><h1>FORM PEMINJAMAN DANA USAHA</h1></div>
+<div class="form"></div>       
+ <table id="main">
+            <form name="biodataDosen" method="POST">
+                <pre>
+                <tr id="main">
+                    <td id="main">
+                        <label for="nama" id="main"><b>NAMA</b> <font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="text" name="nama" id="nama" size="5" style="width: 98%;" required>
+                    </td>
+ 
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim"><b>NIM</b> <font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="text" name="nim" id="nim" size="5" style="width: 98%;" required>
+                    </td>
+ 
+                </tr>
+                <tr>
+                    <td>
+ 
+                    </td>
+                    <td align="center">
+                        <b><i>FAKULTAS</i></b>
+                    </td>
+                    <td align="center" style="width: 250px;">
+                        <b><i>PRODI</i></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nama" style="width: 98%;"><b>Fakultas/Prodi<font color="red">*</font></b></label>
+                    </td>
+ 
+                    <td>
+                        <input type="text" name="fakultas" id="fakultas" size="5" style="width: 98%;">
+                    </td>
+                    <td>
+                        <input type="text" name="prodi" id="prodi" size="20" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nik" style="width: 98%;"><b>NIK</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="text" name="nik" id="nik" size="5" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 250px;">
+                        <label for="ttl"><b>Tempat/Tanggal Lahir</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <select name="kota" id="kota" style="width: 100%;" required>
+                            <option>--pilih kota--</option>
+                            <option>banyuwangi</option>
+                            <option>pasuruan</option>
+                            <option>bondowoso</option>
+                            <option>lumajang</option>
+                            <option>probolinggo</option>
+                            <option>situbondo</option>
+                            <option>jember</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" name="tanggal" required="" pattern="date" style="width: 98%;">
+                    </td>
+ 
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hp" style="width: 98%;"><b>NO. HP</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="number" name="hp" id="hp" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kelamin" style="width: 98%;"><b>Jenis Kelamin</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="radio" name="kelamin" id="kelamin" value="Laki-Laki">Laki-Laki</input>
+                        <input type="radio" name="kelamin" id="kelamin" value="Perempuan">Perempuan</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email" style="width: 98%;"><b>Alamat Email</b><font color="red">*</font></label></td>
+                    <td>
+                        <input type="email" name="email" id="email" required pattern=".+@.+.com" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="alamat" style="width: 98%;"><b>Alamat Lengkap</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="text" name="alamat" id="alamat" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tujuan" style="width: 98%;"><b>Tujuan Peminjaman</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <input type="text" name="tujuan" id="tujuan" style="width: 98%;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jumlah"><b>Jumlah Peminjaman</b><font color="red">*</font></label>
+                    </td>
+                    <td>
+                        <select name="jumlah" id="jumlah" style="width: 100%;" required>
+                            <option>--pilih nominal--</option>
+                            <option>Rp.0-Rp.500.000</option>
+                            <option>Rp.500.000-Rp.1.000.000</option>
+                            <option>Rp.1.000.000-Rp.1.500.000</option>
+                            <option>Rp.1.500.000-Rp.2.000.000</option>
+                        </select>
+                    </td>
+ 
+                </tr>
+                <tr>
+ 
+                </tr>
+                <tr>
+                    <td>
+ 
+                    </td>
+                    <td>
+                        <button type="submit" onclick="terimaInput()" style="width: 49.3%;"><b>Kirim</b></button>
+                        
+                    </td>
+                </tr>
+                </pre>
+            </form>
+        </table></div>
+
+            <div class="loginbox">
+                <img src="user.png" class="user">
+                <h2>Silahkan Login</h2>
+                <form>
+                    <p>Nim</p>
+                    <input type="text" name="" placeholder="Nim">
+                    <p>password</p>
+                    <input type="password" name="" placeholder="**********">
+                    <input type="submit" name="" value="Login">
+                    <a href="#">Lupa Password</a>
+                </form>
+            </div>
+        
+
+</div>
+
+
+<div class="bottom">
+    <div>
+    <div class="l1">
+        <div class="logo"><img src="logo kopma2.jpg"></div>
+        <div class="kopma"><h3>KOPMA</h3></div>
+        <div class="unej"><h3>UNEJ</h3></div>
+    </div>
+    <div class="l2">
+        <div><img src="phone.png"></div>
+        <div><h3>(0274) 565774, 519943</h3></div>
+    </div>
+    <div class="l3">
+        <div><img src="fax.png"></div>
+        <div><h3> (0274) 566171</h3></div>
+    </div>
+    <div class="l4">
+        <div><img src="secured-letter.png"></div>
+        <div><h3>info@kopma-UNEJ.net</h3></div>
+    </div>
+    </div>
+    <div>
+    <div class="l5">
+        <div><img src="map-marker.png"></div>
+        <div><h3>Jalan Kalimantan No. 37 Kampus Tegalboto
+Sumbersari, Krajan Timur, Sumbersari,
+Kabupaten Jember, Jawa Timur 68121</h3></div>
+    </div>
+    <div class="l6">
+        <div><h3>©2018 Universitas Jember</h3></div>
+    </div>
+    </div>
+</div>
+
+</body>
+</div>
+</html>
